@@ -5,18 +5,17 @@ anchor:  mac_setup
 
 ## Mac Setup {#mac_setup_title}
 
-OS X comes prepackaged with PHP but it is normally a little behind the latest stable. Mountain Lion has 5.3.10,
-Mavericks has 5.4.17 and Yosemite has 5.5.9, but with PHP 5.6 out that is often not good enough.
+OS X မှာ PHP ကို prepackaged လုပ်ပြီးသားရှိပါတယ် ဒါပေမယ့်ပုံမှန်အားဖြင့်အဲ့ဒါက နောက်ဆုံး version ထက်နောက်ကျနေပါတယ်။ Mountain Lion မှာ 5.3.10၊ Mavericks မှာ 5.4.17 နဲ့ Yosemite မှာ 5.5.9 ရှိပါတယ်၊ ဒါပေမယ့် PHP 5.6 ထွက်လာတဲ့အခါမှာဒါတွေကမလုံလောက်တော့ပါဘူး။
 
-There are multiple ways to install PHP on OS X.
+PHP ကို OS X မှာ install ုပ်ဖို့နည်းမျိူးစုံရှိပါတယ်
 
-### Install PHP via Homebrew
+### Homebrew ကနေ PHP ကို Install လုပ်ခြင်း
 
-[Homebrew] is a powerful package manager for OS X, which can help you install PHP and various extensions easily.
-[Homebrew PHP] is a repository that contains PHP-related "formulae" for Homebrew, and will let you install PHP.
+[Homebrew] က OS X အတွက် powerful package manager တစ်ခုဖြစ်ပါတယ်၊ သူက PHP နဲ့ အခြား extensions တွေကို install လုပ်ဖို့ သင့်ကိုကူညီနိုင်ပါတယ်။
+[Homebrew PHP] ကတော့ repository တစ်ခုဖြစ်ပါတယ် အဲ့ဒါက Homebrew အတွက် PHP နဲ့ပတ်သတ်တဲ့ "formulae" တွေပါဝင်ပါတယ်၊ နောက်ပြီး အဲ့ဒါကသင့်ကို PHP install လုပ်ခွင့်ပြုပါလိမ့်မယ်။
 
-At this point, you can install `php53`, `php54`, `php55` or `php56` using the `brew install` command, and switch
-between them by modifying your `PATH` variable. Alternatively you can use [brew-php-switcher][brew-php-switcher] which will switch automatically for you.
+ဒီနေရာမှာတော့၊ သင် `php53`, `php54`, `php55` ဒါမှမဟုတ် `php56` တွေကို `brew install` command နဲ့ install လုပ်နိုင်ပါတယ်၊ နောက်အဲ့ဒါတွေကိုလည်း သင် modify လုပ်ထားတဲ့ `PATH` variable ပေါ်မူတည်ပြီးတော့လည်းပြောင်းလဲနိုင်ပါတယ်။ 
+
 
 ### Install PHP via Macports
 
@@ -38,10 +37,9 @@ And you can run `select` command to switch your active php:
 
     sudo port select --set php php55
 
-### Install PHP via phpbrew
+### PHP ကို phpbrew ကနေတစ်ဆင့် Install လုပ်ခြင်း
 
-[phpbrew] is a tool for installing and managing multiple PHP versions. This can be really useful if two different
-applications/projects require different versions of PHP, and you are not using virtual machines.
+[phpbrew] က PHP install လုပ်ဖို့ tool တစ်ခုလည်းဖြစ်တယ် နောက် PHP versions တွေကိုလည်း managing လုပ်ပေးပါတယ်။ ဒါက မတူညီတဲ့ applications/projects နှစ်ခုက မတူညီတဲ့ PHP version နှစ်ခုလိုတယ် နောက် သင်က virtual machines လည်းမသုံးဘူးဆိုရင်ဒါကတကယ့်ကိုအသုံးဝင်မှာဖြစ်ပါတယ်။
 
 ### Install PHP via Liip's binary installer
 Another popular option is [php-osx.liip.ch] which provides one liner installation methods for versions 5.3 through 5.6.
@@ -49,15 +47,12 @@ It doesn't overwrite the php binaries installed by Apple, but installs everythin
 
 ### Compile from Source
 
-Another option that gives you control over the version of PHP you install, is to [compile it yourself][mac-compile].
-In that case be sure to have installed either [Xcode][xcode-gcc-substitution] or Apple's substitute
-["Command Line Tools for XCode"] downloadable from Apple's Mac Developer Center.
+နော်ထက်ရွေးချယ်စရာတစ်ခုကတော့ ကိုယ်တိုင် compile လုပ်တာပါဘဲ[compile it yourself][mac-compile]၊ compile လုပ်မယ်ဆိုရင် [Xcode][xcode-gcc-substitution] ဒါမှမဟုတ် Apple's substitute
+["Command Line Tools for XCode"] ကို Apple's Mac Developer Center ကနေ download လုပ်ပြီး install လုပ်ထားရပါမယ်။
 
 ### All-in-One Installers
 
-The solutions listed above mainly handle PHP itself, and do not supply things like Apache, Nginx or a SQL server.
-"All-in-one" solutions such as [MAMP][mamp-downloads] and [XAMPP][xampp] will install these other bits of software for
-you and tie them all together, but ease of setup comes with a trade-off of flexibility.
+အထက်မှာဖော်ပြခဲ့တဲ့ solution တွေကတော့ PHP အတွက်ဘဲဖြေရှင်းသွားတာတွေဖြစ်ပါတယ်၊Apache, Nginx လို Webserver တွေ SQL server တွေကိုတော့ support ပေးမှာမဟုတ်ပါဘူး။ "All-in-one" ဆိုတာကတော့ [MAMP][mamp-downloads] နောက် [XAMPP][xampp] တို့လိုဟာတွေကိုပြောတာပါ။အဲ့ဒါတွေကမှလိုအပ်တဲ့အခြား software တွေပါတစ်ပါးတည်းပေါင်းထည့်ထားမှာပါ၊ ဒါပေမယ့် setup ကတော့တော်တော်လေးအဆင်ပြေပါလိမ့်မယ်။s
 
 
 [Homebrew]: http://brew.sh/
