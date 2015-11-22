@@ -1,4 +1,4 @@
-baseurl: /
+baseurl: http://phpmyanmar.github.io/php-the-right-way
 highlighter: pygments
 markdown: kramdown
 permalink: date
