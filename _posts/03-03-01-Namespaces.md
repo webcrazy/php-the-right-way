@@ -5,24 +5,15 @@ anchor:  namespaces
 
 ## Namespaces {#namespaces_title}
 
-As mentioned above, the PHP community has a lot of developers creating lots of code. This means that one library's PHP
-code may use the same class name as another library. When both libraries are used in the same namespace, they collide
-and cause trouble.
+အထက်မှာဖော်ပြခဲ့သလိုဘဲ PHP community မှာ developers တွေအများကြီးက code တွေအများကြီးကို create လုပ်နေကြတယ်။ ဒါကဘာကိုဆိုလိုတာလဲဆိုရင် PHP library ထဲက code တွေထဲက class name တစ်ခုကအခြား library မှာလည်းရှိနိုင်တာကိုပြောချင်တာပါ။ libraries နှစ်ခုလုံးက namespace တစ်ခုတည်းကိုသုံးတဲ့အခါမှာ အဲ့ဒါတွေက code တွေကိုထိခိုက်ပြီးတော့ ပြဿနာတက်ကုန်ပါတယ်။
 
-_Namespaces_ solve this problem. As described in the PHP reference manual, namespaces may be compared to operating
-system directories that _namespace_ files; two files with the same name may co-exist in separate directories. Likewise,
-two PHP classes with the same name may co-exist in separate PHP namespaces. It's as simple as that.
+_Namespaces_ တွေကအဲ့ဒီ့ပြဿနာတွေကိုဖြေရှင်းပေးတာပါ။  PHP reference manual ထဲမှာဖော်ပြထားတဲ့အတိုင်းဆိုရင်၊ namespaces တွေကို operating system directories တွေနဲ့နှိုင်းယှဉ်ရပါလိမ့်မယ်၊ အဲ့ဒီ့ _namespace_ files; တွေက အမည်အတူတူနဲ့မတူညီတဲ့ directories ထဲမှာတည်ရှိနိုင်ပါတယ်။ ထိုနည်းတူဘဲ PHP classes နှစ်ခုက အမည်အတူတူနဲ့ မတူညီတဲ့ namespaces ထဲမှာတည်ရှိနိုင်ပါတယ်။ ဒါကတော့ရှင်းရှင်းလေးပါဘဲ။
 
-It is important for you to namespace your code so that it may be used by other developers without fear of colliding
-with other libraries.
+သင့် code ကို namespace လုပ်ဖို့သင့်အတွက်အရေးကြီးပါတယ် ဘာလို့လည်းဆိုရင် အခြား developer တွေကသင့်ဆီက code ကိုအခြား libraries တွေနဲ့မညိဘဲအသုံးပြုနိုင်ပါလိမ့်မယ်။
 
-One recommended way to use namespaces is outlined in [PSR-4][psr4], which aims to provide a standard file, class and
-namespace convention to allow plug-and-play code.
+namespace ကို [PSR-4][psr4] မှာဖော်ပြခဲ့တဲ့အတိုင်း အသုံးပြုဖို့ရာအတွက် ထောက်ခံမှူတစ်ခုလုပ်ချင်ပါတယ်၊ အဲ့ဒါရဲ့ရည်ရွယ်ချက်ကတော့ standard file ၊ class နဲ့ namespace convention တွေကို plug-and-play code ဖြစ်စေဖို့ရာအတွက်ဘဲဖြစ်ပါတယ်။
 
-In October 2014 the PHP-FIG deprecated the previous autoloading standard: [PSR-0][psr0], which has been replaced with
-[PSR-4][psr4]. Currently both are still usable, as PSR-4 requires PHP 5.3 and many PHP 5.2-only projects currently implement
-PSR-0. If you're going to use an autoloader standard for a new application or package then you almost certainly want
-to look into PSR-4.
+October 2014 မှာ PHP-FIG က အရင် autoloading standard: [PSR-0][psr0] ကို deprecate ဖြစ်သွားပြီးအဲ့ဒါကို [PSR-4][psr4] နဲ့အစားထိုးလိုက်ပါတယ်။ လက်ရှိမှာတော့ နှစ်ခုလုံးကအသုံးဝင်ပါသေးတယ်၊ PSR-4 က PHP 5.3 လိုအပ်ပြီးတော့ PHP 5.2 ကိုသုံးပြုတဲ့များစွာသော project တွေကတော့ PSR-0 ကိုအသုံးပြုဆဲပါဘဲ။ သင့် application အသစ် ဒါမှမဟုတ် package အတွက် autoloader standard သုံးမယ်ဆိုရင်တော့ PSR-4 ကိုသင်သေချာပေါက်ကြည့်ချင်ပါလိမ့်မယ်။
 
 * [Read about Namespaces][namespaces]
 * [Read about PSR-0][psr0]
