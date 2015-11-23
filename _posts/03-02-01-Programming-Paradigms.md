@@ -3,51 +3,45 @@ isChild: true
 anchor:  programming_paradigms
 ---
 
-## Programming Paradigms {#programming_paradigms_title}
+## ပရိုဂရမ်ရေးသား　ဟန်များ  {#programming_paradigms_title}
 
-PHP is a flexible, dynamic language that supports a variety of programming techniques. It has evolved dramatically over
-the years, notably adding a solid object-oriented model in PHP 5.0 (2004), anonymous functions and namespaces in
-PHP 5.3 (2009), and traits in PHP 5.4 (2012).
+PHP ဟာ ပရိုဂရမ်ရေးသားနည်းမျိုးကွဲများစွာကို ပံ့ပိုးပေးထားတဲ့ အသုံးပြုရလွယ်ကူတဲ့ ဒိုင်းနမစ် ပရိုဂရမ်ဘာသာစကားတစ်ခုဖြစ်ပါတယ်။ PHP ရဲ့ နှစ်များစွာကြာတဲ့ သက်တမ်းတစ်လျှောက် သိသိသာသာပြောင်းလဲခဲ့ပါတယ်။　မှတ်သားဖွယ်ပြောင်းလဲမှုတွေကတော့ ၂၀၀၄ ခုနှစ် PHP 5.0 မှာ Object တွေကို အခြေခံတဲ့ ပရိုရမ်ရေးသားနည်း  ပုံစံ ကို ခိုင်ခိုင်မာမာ ထည့်သွင်းခဲ့တာ၊ ၂၀၀၉ ခုနှစ် PHP 5.3 မှာ  Anonymous Function နဲ့　Name Space တွေထည့်သွင်းခဲ့တာ၊ ၂၀၁၂ ခုနှစ် PHP 5.4 မှာ traits တွေထည့်သွင်းခဲ့တာတွေ ပဲဖြစ်ပါတယ်။
 
-### Object-oriented Programming
 
-PHP has a very complete set of object-oriented programming features including support for classes, abstract classes,
-interfaces, inheritance, constructors, cloning, exceptions, and more.
+### Object ဗဟိုပြုပရိုဂရမ်ရေးသားခြင်း
 
-* [Read about Object-oriented PHP][oop]
-* [Read about Traits][traits]
+PHP မှာ Object ဗဟိုပြုပရိုဂရမ်ရေးသားခြင်း အတွက် ပြည့်စုံတဲ့ ပံ့ပိုးမှုတွေ ပါ၀င်ပါတယ်။ class များ၊ abstract class များ၊ interface များ၊ inheritance၊ constructor များ၊ cloning၊ exception နဲ့ အခြားသော ပံ့ပိုးမှုတွေဖြစ်ပါတယ်။
 
-### Functional Programming
+* [Object-oriented PHP အကြောင်းဖတ်ရန်][oop]
+* [Trait များအကြောင်းဖတ်ရန်][traits]
 
-PHP supports first-class functions, meaning that a function can be assigned to a variable. Both user-defined and
-built-in functions can be referenced by a variable and invoked dynamically. Functions can be passed as arguments to
-other functions (a feature called _Higher-order Functions_) and functions can return other functions.
+### Function ဗဟိုပြု ပရိုဂရမ်ရေးသားခြင်း
 
-Recursion, a feature that allows a function to call itself, is supported by the language, but most PHP code
-is focused on iteration.
+PPHP ဟာ first class  function တွေကို အထောက်အပံ့ပေးတဲ့အတွက် function တစ်ခုကို variable တစ်ခုအတွင်းမှာ ထည့်သုံးလို့ရပါတယ်။
+User သတ်မှတ်ပေးတဲ့ function တွေရော၊ မူလပါ၀င်ပြီးသား function တွေကိုပါ variable တစ်ခုအတွင်းမှာ ထည့်သွင်းမှတ်သားပြီး  လိုသလိုခေါ်ယူသုံးနိုင်ပါတယ်။
+function တွေကို အခြား function တွေရဲ့ argument အဖြစ်(higher order function လို့ခေါ်ပါတယ်။)ထည့်သွင်းပေးနိုင်သလို function တစ်ခုမှအခြား function တစ်ခုကိုလည်း return ပြန်ပေးလို့ရပါတယ်။
 
-New anonymous functions (with support for closures) are present since PHP 5.3 (2009).
+Recursion(function တစ်ခုမှ မိမိကိုယ်ကိုယ် ပြန်ခေါ်ယူအသုံးပြုခြင်း)ကိုလည်း အထောက်အပံ့ပေးထားပါတယ်။ ဒါပေမဲ့ PHP codeအများစုကတော့ iteration ကိုပဲ အာရုံစိုက်အသုံးပြုလေ့ ရှိပါတယ်။
 
-PHP 5.4 added the ability to bind closures to an object's scope and also improved support for callables such that they
-can be used interchangeably with anonymous functions in almost all cases.
+PHP 5.3 (၂၀၀၉နှစ်)ကစလို့ closure အထောက်အပံ့ပါတဲ့ anonymous function တွေလည်းပါရှိနေပြီ ဖြစ်ပါတယ်။
 
-* Continue reading on [Functional Programming in PHP](/pages/Functional-Programming.html)
-* [Read about Anonymous Functions][anonymous-functions]
-* [Read about the Closure class][closure-class]
-* [More details in the Closures RFC][closures-rfc]
-* [Read about Callables][callables]
-* [Read about dynamically invoking functions with `call_user_func_array()`][call-user-func-array]
+PHP 5.4 မှာတော့ closure တွေကို object တစ်ခုရဲ့ scope အတွင်းမှာပဲ ချိတ်ဆက်ယူနိုင်တဲ့ စွမ်းရည်တွေ၊ anonymous function တွေနဲ့ကြိုက်သလိုအစားထိုး ပြောင်းလဲအသုံးပြုနိုင်အောင် callable တွေအတွက်ပိုမိုကောင်းမွန်တဲ့ အထောက်အပံ့တွေပါလာပါတယ်။
+
+* [PHP နှင့် Function ဗဟိုပြု ပရိုဂရမ်ရေးသားခြင်းအကြောင်းဖတ်ရန်](/php-the-right-way/pages/Functional-Programming.html)
+* [Anonymous Functions အကြောင်းဖတ်ရန်][anonymous-functions]
+* [Closure class အကြောင်းဖတ်ရန်][closure-class]
+* [Closures RFC အကြောင်းအသေးစိတ်ဖတ်ရန်][closures-rfc]
+* [Callable များအကြောင်းဖတ်ရန်][callables]
+* [`call_user_func_array()` အားသုံး၍ dynamic ခေါ်ယူနိုင်သော functionများအကြောင်းဖတ်ရန်][call-user-func-array]
 
 ### Meta Programming
 
-PHP supports various forms of meta-programming through mechanisms like the Reflection API and Magic Methods. There are
-many Magic Methods available like `__get()`, `__set()`, `__clone()`, `__toString()`, `__invoke()`, etc. that allow
-developers to hook into class behavior. Ruby developers often say that PHP is lacking `method_missing`, but it is
-available as `__call()` and `__callStatic()`.
+PHP ဟာ Reflection API နဲ့ Magic Methods လိုနည်းလမ်း တွေကိုသုံးပြီး meta programming ပုံစံအမျိုးမျိုးကို အထောက်အပံ့ပေးထားပါတယ်။
+`__get()`, `__set()`, `__clone()`, `__toString()`, `__invoke()` အစရှိတဲ့ magic methods တွေဟာအသုံးပြုတဲ့ developer ကို class တစ်ခုရဲ့ လုပ်ငန်းစဥ် အတွင်းကို ၀င်ရောက်ချိတ်ဆက်ပြုပြင်နိုင်ဖို့ ခွင့်ပြုပေးထားပါတယ်။ Ruby developerတွေက PHP မှာ `method_missing` မပါတာကို မကြာခဏ ပြောလေ့ရှိပေမဲ့ တကယ်တော့ `__call()` နဲ့ `__callStatic()` method တွေအဖြစ်ရှိပြီးသား ဖြစ်ပါတယ်။
 
-* [Read about Magic Methods][magic-methods]
-* [Read about Reflection][reflection]
-* [Read about Overloading][overloading]
+* [Magic Method တွေအကြောင်းဖတ်ရန်][magic-methods]
+* [Reflection အကြောင်းဖတ်ရန်][reflection]
+* [Overloading အကြောင်းဖတ်ရန်][overloading]
 
 
 [oop]: http://php.net/language.oop5
