@@ -5,25 +5,11 @@ anchor:  opcode_cache
 
 ## Opcode Cache {#opcode_cache_title}
 
-When a PHP file is executed, under the hood it is first compiled to opcodes and, only then, the opcodes are executed.
-If a PHP file is not modified, the opcodes will always be the same. This means that the compilation step is a waste of
-CPU resources.
-
 PHP file တစ္ခုကို executed လုပ္တဲ့အခါ ေနာက္ကြယ္မွာ opcodes အျဖစ္သို့ အရင္ compiled လုပ္ျပီးေတာ့မွ အဲ့ဒီ opcodes ေတြကို executed လုပ္ပါတယ္။ PHP file တစ္ခုဟာ ျပုျပင္ ေျပာင္းလဲမွု လုပ္မထားဘူးဆိုရင္ opcodes ဟာ အတူတူပဲျဖစ္ပါတယ္။ အဲ့ဒါဆိုရင္ compilation လုပ္တာက CPU resources ကို ျဖုန္းတီးျခင္း သက္သက္ပဲျဖစ္ပါတယ္။
-
-This is where opcode caches come in. They prevent redundant compilation by storing opcodes in memory and reusing it on
-successive calls. Setting up an opcode cache takes a matter of minutes, and your application will speed up
-significantly. There's really no reason not to use it.
 
 အခုလိုေနရာမ်ိးမွာ opcode caches က အေရးပါလာပါတယ္။ opcodes ေတြကို memory မွာ သိမ္းထားျပီး လိုအပ္တဲ့ အခါ ျပန္သံုးျခင္းအားျခင္းအားျဖင့္ မလိုအပ္တဲ့ compilation ေတြကို မျဖစ္ေစပါဘူး။ opcode cache ကို အသံုးျပုဖို့ ျပင္ဆင္ခ်ိန္ဟာ မိနစ္ အနည္းငယ္ပဲျကာျပီး သင့္ရဲ့ application ကို သိသိသာသာ ျမန္ဆန္ေစမွာ ျဖစ္တဲ့ အတြက္ မသံုးသင့္ဘူးဆိုတဲ့ အေျကာင္းျပခ်က္ေတာ့ မရွိပါဘူး
 
-
-As of PHP 5.5, there is a built-in opcode cache called [OPcache][opcache-book]. It is also available for earlier
-versions.
-
 PHP 5.5 မွာ [OPcache][opcache-book] လို့ေခါ္တဲ့ built-in opcode cache ပါ၀င္လာပါတယ္။ 5.5 အေရွ့ versions ေတြ အတြက္လည္း ရရွိနိုင္ပါတယ္။
-
-Read more about opcode caches:
 
 opcode caches အေျကာင္းကို ထပ္မံ ဖတ္ရွုနိုင္ပါတယ္။
 
