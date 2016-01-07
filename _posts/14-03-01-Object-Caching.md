@@ -5,17 +5,17 @@ anchor:  object_caching
 
 ## Object Caching {#object_caching_title}
 
-သင့္ရဲ့ code ထဲမွာ တစ္ခ်ို့ေသာ object  ေတြ ဥပမာ ... ရဖို့ခက္ခဲတဲ့ data ေတြ၊ ေျပာင္းလဲနိုင္ေျခ နည္းတဲ့ database calls ေတြကို  cache လုပ္မယ္ဆိုရင္ အက်ိုးရွိပါတယ္။ ေနာက္တစ္ခါသံုးဖို့ လိုအပ္တဲ့ အခါ အရမ္းျမန္ဆန္ေအာင္ memory မွာ အဲ့ဒီ data ေတြကို သိမ္းထားဖို့ object caching software  ကို အသံုးျပုနိုင္ပါတယ္။ အဲ့ဒီ item  ေတြကို ပထမတစ္ျကိမ္ရယူျပီးရင္ data store ထဲ ထည့္ထား၊ ေနာက္ထပ္ ဒါမ်ိုး request ေတြဆိုရင္ cache ထဲက ေနတိုက္ရိုက္ယူဆိုျပီး ျပုလုပ္ထားမယ္ဆိုရင္ performance အရေ ျမန္ဆန္ျခင္းေရာ database server ကို load လုပ္ ျခင္းကို လည္း ေလ်ာ့ခ်နိုင္မွာပါ။
+သင့်ရဲ့ code ထဲမှာ တစ်ချို့သော object  တွေ ဥပမာ ... ရဖို့ခက်ခဲတဲ့ data တွေ၊ ပြောင်းလဲနိုင်ခြေ နည်းတဲ့ database calls တွေကို  cache လုပ်မယ်ဆိုရင် အကျိုးရှိပါတယ်။ နောက်တစ်ခါသုံးဖို့ လိုအပ်တဲ့ အခါ အရမ်းမြန်ဆန်အောင် memory မှာ အဲ့ဒီ data တွေကို သိမ်းထားဖို့ object caching software  ကို အသုံးပြုနိုင်ပါတယ်။ အဲ့ဒီ item  တွေကို ပထမတစ်ကြိမ်ရယူပြီးရင် data store ထဲ ထည့်ထား၊ နောက်ထပ် ဒါမျိုး request တွေဆိုရင် cache ထဲက နေတိုက်ရိုက်ယူဆိုပြီး ပြုလုပ်ထားမယ်ဆိုရင် performance အရေ မြန်ဆန်ခြင်းရော database server ကို load လုပ် ခြင်းကို လည်း လျော့ချနိုင်မှာပါ။
 
-နာမည္ျကီး bytecode caching solutions ေတြဟာ custom data ေတြကို ပါ cache လုပ္နိုင္ျပီး သူတို့ေတြကေန ရနိုင္တဲ့ တျခား အက်ိုးေက်းဇူး အမ်ားအျပားလည္းရွိပါေသးတယ္။  APCu, XCache, နဲ့ WinCache တို့ အကုန္လံုးဟာ သင့္ရဲ့ PHP code ေတြကို သူတို့ရဲ့ memory cache ေတြမွာ save ဖို့အတြက္ APIs ေတြေပးထားပါတယ္။
+နာမည်ကြီး bytecode caching solutions တွေဟာ custom data တွေကို ပါ cache လုပ်နိုင်ပြီး သူတို့တွေကနေ ရနိုင်တဲ့ တခြား အကျိုးကျေးဇူး အများအပြားလည်းရှိပါသေးတယ်။  APCu, XCache, နဲ့ WinCache တို့ အကုန်လုံးဟာ သင့်ရဲ့ PHP code တွေကို သူတို့ရဲ့ memory cache တွေမှာ save ဖို့အတွက် APIs တွေပေးထားပါတယ်။
 
-လူသံုးအမ်ားဆံုး memory object caching systems ေတြကေတာ့ APCu and memcached တို့ပဲျဖစ္ပါတယ္။ APCu က object caching အတြက္ အေကာင္းဆံုး ေရြးခ်ယ္မွုျဖစ္ျပီး သင့္ရဲ့ data ေတြကို သူ့ရဲ့ memory cache ထဲထည့္ဖို့ setup လုပ္ရန္လြယ္ကူျပီး ရိုးရွင္တဲ့ API ပါဝင္ပါတယ္။ APCu ရဲ့ တစ္ခုတည္းေသာ ကန့္သတ္ခ်က္က သူ့ကို installed  လုပ္ထားတဲ့ server နဲ့ တြဲေနျခင္းပဲ ျဖစ္ပါတယ္။ Memcached ကေတာ့ သီးသန့္ service အျဖစ္ installed လုပ္ သံုးနိုင္ျပီး network မွ တစ္ဆင့္ access လုပ္နိုင္ပါတယ္။ ဆိုလိုတာက object ေတြကို အရမ္းျမန္ဆန္တဲ့ ေနရာတစ္ခုမွာ သိမ္းထားျပီး system အမ်ိုးမ်ိုးကေန ရယူအသံုးျပုနုိင္ပါတယ္။
+လူသုံးအများဆုံး memory object caching systems တွေကတော့ APCu and memcached တို့ပဲဖြစ်ပါတယ်။ APCu က object caching အတွက် အကောင်းဆုံး ရွေးချယ်မှုဖြစ်ပြီး သင့်ရဲ့ data တွေကို သူ့ရဲ့ memory cache ထဲထည့်ဖို့ setup လုပ်ရန်လွယ်ကူပြီး ရိုးရှင်တဲ့ API ပါဝင်ပါတယ်။ APCu ရဲ့ တစ်ခုတည်းသော ကန့်သတ်ချက်က သူ့ကို installed  လုပ်ထားတဲ့ server နဲ့ တွဲနေခြင်းပဲ ဖြစ်ပါတယ်။ Memcached ကတော့ သီးသန့် service အဖြစ် installed လုပ် သုံးနိုင်ပြီး network မှ တစ်ဆင့် access လုပ်နိုင်ပါတယ်။ ဆိုလိုတာက object တွေကို အရမ်းမြန်ဆန်တဲ့ နေရာတစ်ခုမှာ သိမ်းထားပြီး system အမျိုးမျိုးကနေ ရယူအသုံးပြုနိုင်ပါတယ်။
 
-တစ္ခု သတိထားရမွာက PHP ကို သင့္ ရဲ့ webserver မွာ (Fast-)CGI application အျဖစ္ run ထားမယ္ဆိုရင္ေတာ့ PHP process တစ္ခုစီမွာ သူ့ကိုယ္ပိုင္ cache ရွိျပီးသားပါ။ ဥပမာ။ ။APCu data ေတြဟာ worker process တစ္ခုနဲ့ တစ္ခု ျကား share မလုပ္ပါဘူး။ အဲ့ဒါမ်ိုးဆိုရင္ေတာ့ PHP process ေတြနဲ့ တြဲစပ္မထားတဲ့ memcached ကို သံုးဖို့ စဥ္းစားသင့္ပါတယ္။
+တစ်ခု သတိထားရမှာက PHP ကို သင့် ရဲ့ webserver မှာ (Fast-)CGI application အဖြစ် run ထားမယ်ဆိုရင်တော့ PHP process တစ်ခုစီမှာ သူ့ကိုယ်ပိုင် cache ရှိပြီးသားပါ။ ဥပမာ။ ။APCu data တွေဟာ worker process တစ်ခုနဲ့ တစ်ခု ကြား share မလုပ်ပါဘူး။ အဲ့ဒါမျိုးဆိုရင်တော့ PHP process တွေနဲ့ တွဲစပ်မထားတဲ့ memcached ကို သုံးဖို့ စဉ်းစားသင့်ပါတယ်။
 
-network configuration တစ္ခုတည္းမွာဆိုရင္ APCu က memcached နဲ့ ယွဥ္ရင္ access speed ပိုသာျပီး memcached က scale up လုပ္မယ္ဆို ပိုျမန္ပါတယ္။ သင့္ရဲ့ application က server မ်ားမ်ား ရွိဖို့ မလိုအပ္ဘူးဆိုရင္ ဒါမွမဟုတ္ memcached မွ ရနိုင္တဲ့ feature ေတြထက္ ပိုမလိုအပ္ဘူးဆိုရင္ APCu က object caching လုပ္ဖို့ အေကာင္းဆံုးေရြးခ်ယ္မွု ျဖစ္ေကာင္းျဖစ္နိုင္ပါတယ္။
+network configuration တစ်ခုတည်းမှာဆိုရင် APCu က memcached နဲ့ ယှဉ်ရင် access speed ပိုသာပြီး memcached က scale up လုပ်မယ်ဆို ပိုမြန်ပါတယ်။ သင့်ရဲ့ application က server များများ ရှိဖို့ မလိုအပ်ဘူးဆိုရင် ဒါမှမဟုတ် memcached မှ ရနိုင်တဲ့ feature တွေထက် ပိုမလိုအပ်ဘူးဆိုရင် APCu က object caching လုပ်ဖို့ အကောင်းဆုံးရွေးချယ်မှု ဖြစ်ကောင်းဖြစ်နိုင်ပါတယ်။
 
-APCu သံုးထားတဲ့ logic ဥပမာ
+APCu သုံးထားတဲ့ logic ဥပမာ
 
 {% highlight php %}
 <?php
@@ -30,7 +30,7 @@ print_r($data);
 {% endhighlight %}
 
 
-PHP 5.5 အေရွ့ပိုင္း မွာဆိုရင္ APC က object cache ေရာ  bytecode cache ေရာ အေထာက္အပံ့ေပးထားပါတယ္။ APCu က PHP 5.5 ေနာက္ပိုင္း version ေတြအတြက္  APC object cache ေတြကို သံုးနိုင္ေအာင္လုပ္ေပးထားတဲ့ project တစ္ခုျဖစ္ပါတယ္။ အခု PHP version က built-in bytecode cache (OPcache) ပါ၀င္လို့ပါပဲ။
+PHP 5.5 အရှေ့ပိုင်း မှာဆိုရင် APC က object cache ရော  bytecode cache ရော အထောက်အပံ့ပေးထားပါတယ်။ APCu က PHP 5.5 နောက်ပိုင်း version တွေအတွက်  APC object cache တွေကို သုံးနိုင်အောင်လုပ်ပေးထားတဲ့ project တစ်ခုဖြစ်ပါတယ်။ အခု PHP version က built-in bytecode cache (OPcache) ပါဝင်လို့ပါပဲ။
 
 ### Learn more about popular object caching systems:
 
