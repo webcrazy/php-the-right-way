@@ -4,14 +4,9 @@ anchor: dependency_management
 
 # Dependency Management {#dependency_management_title}
 
-There are a ton of PHP libraries, frameworks, and components to choose from. Your project will likely use 
-several of them — these are project dependencies. Until recently, PHP did not have a good way to manage
-these project dependencies. Even if you managed them manually, you still had to worry about autoloaders.
-That is no longer an issue.
+ရွေးချယ်ဖို့များစွာသော PHP libraries တွေ frameworks တွေနဲ့ components တွေရှိပါတယ်။ သင့်ရဲ့ project ကအဲ့ဒါတွေကိုသုံးပါလိမ့်မယ်၊ အဲ့ဒါတွေက project dependencies တွေဖြစ်ပါတယ်။ မကြာသေးမှီကဘဲ PHP မှာအဲ့ဒီ့ Project dependencies တွေကို manage လုပ်ဖို့နည်းလမ်းကောင်းကောင်းမရှိပါဘူး။ သင်အဲ့ဒါတွေကို manual manage လုပ်ပေမယ့်လည်း သင် autoloaders တွေကို worry ဖြစ်ဖို့ကျန်နေပါသေးတယ်။ အခုတော့ အဲဒါက issue တစ်ခုမဟုတ်တော့ပါဘူး။
 
-Currently there are two major package management systems for PHP - [Composer] and [PEAR]. Composer is
-the main package manager to use for PHP, however for a long time PEAR used to fill that role. Knowing what
-PEAR is will be a good idea as you may still find references to it, even if you never use it.
+အခုလက်ရှိမှာတော့ PHP major package management system နှစ်ခုရှိပါတယ် [Composer] နဲ့ [PEAR]။ Composer က PHP အတွက် main package manager တစ်ခုဖြစ်ပါတယ်၊ သို့ပေမယ့်လည်း PEAR က composer မတိုင်ခင်က အဲ့ဒီ့နေရာမှာရှိခဲ့ပါတယ်။ Pear ကိုမသုံးပေမယ့်လည်း PEAR ဆိုတာဘာလည်းသိထားတော့ အဲ့ဒါကိုသင် references လုပ်နိုင်တာပေါ့။ 
 
 [Composer]: /#composer_and_packagist
 [PEAR]: /#pear

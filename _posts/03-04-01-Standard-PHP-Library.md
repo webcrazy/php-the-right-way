@@ -6,13 +6,12 @@ anchor:  standard_php_library
 
 ## Standard PHP Library {#standard_php_library_title}
 
-The Standard PHP Library (SPL) is packaged with PHP and provides a collection of classes and interfaces. It is made up
-primarily of commonly needed datastructure classes (stack, queue, heap, and so on), and iterators which can traverse
-over these datastructures or your own classes which implement SPL interfaces.
+Standard PHP Library (SPL) က PHP နဲ့ package လုပ်ပြီးတော့ classes တွေ interfaces collection တွေကို provide လုပ်ထားတာပါ။ အဲ့ဒါတွေကိုအများအားဖြင့်လိုအပ်တဲ့ datastructure classes တွေဖြစ်တဲ့ (stack တို့၊ queue တို့ heap အစရှိသည်တို့)အတွက်အဓိကပြုလုပ်ထားခြင်းဖြစ်ပါတယ်၊ နောက် iterators တွေက အဲ့ဒီ့ datastructures ဒါမှမဟုတ် သင့်ကိုယ်ပိုင် classes တွေက SPL interfaces အဖြစ် implement လုပ်နိုင်ပါတယ်။
 
-* [Read about the SPL][spl]
+* [SPL အကြောင်းဖတ်ရန်][spl]
 * [SPL video course on Lynda.com(Paid)][spllynda]
 
 
 [spl]: http://php.net/book.spl
-[spllynda]: http://www.lynda.com/PHP-tutorials/Up-Running-Standard-PHP-Library/175038-2.html
+[spllynda]:http://www.lynda.com/PHP-tutorials/Up-Running-Standard-PHP-Library/175038-2.html
+

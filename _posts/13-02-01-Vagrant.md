@@ -15,9 +15,9 @@ a "fresh" installation.
 Vagrant creates folders for sharing your code between your host and your virtual machine, which means that you can
 create and edit your files on your host machine and then run the code inside your virtual machine.
 
-### A little help
+### အကူအညီ
 
-If you need a little help to start using Vagrant there are some services that might be useful:
+သင့်အနေနဲ့ Vagrant အသုံးပြုရမှာ မရင်းနှီးပါက အောက်ပါလင့်များကို ဖတ်ရှုနိုင်ပါတယ် - 
 
 - [Rove][Rove]: service that allows you to pre-generate typical Vagrant builds, PHP among the options. The provisioning is
 made with Chef.

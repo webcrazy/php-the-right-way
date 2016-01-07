@@ -17,23 +17,18 @@ PHP ကို OS X မှာ install ုပ်ဖို့နည်းမျိ�
 ဒီနေရာမှာတော့၊ သင် `php53`, `php54`, `php55` ဒါမှမဟုတ် `php56` တွေကို `brew install` command နဲ့ install လုပ်နိုင်ပါတယ်၊ နောက်အဲ့ဒါတွေကိုလည်း သင် modify လုပ်ထားတဲ့ `PATH` variable ပေါ်မူတည်ပြီးတော့လည်းပြောင်းလဲနိုင်ပါတယ်။ 
 
 
-### Install PHP via Macports
+### Macports ကတစ်ဆင့် PHP ကို install လုပ်ခြင်း
 
-The [MacPorts] Project is an open-source community initiative to design an
-easy-to-use system for compiling, installing, and upgrading either
-command-line, X11 or Aqua based open-source software on the OS X operating
-system.
+[MacPorts] Project က OS X operating system မှာ compiling လုပ်ခြင်း install လုပ်ခြင်းနဲ့ command-line ဖြစ်စေ X11 ဒါမှမဟုတ် based open-source software တွေကိုအသုံးပြုရလွယ်ကူစေရန်အတွက် initiative လုပ်ထားတဲ့ open-source community တစ်ခုဖြစ်ပါတယ်။
 
-MacPorts supports pre-compiled binaries, so you don't need to recompile every
-dependencies from the source tarball files, it saves your life if you don't
-have any package installed on your system.
+MacPorts က pre-compiled binaries တွေကို support လုပ်တော့ သင့်အနေနဲ့ dependencies တွေကို source tarball files ကနေပြန်ပြန်ပြီး recompile လုပ်စရာမလိုတော့ပါဘူး၊ သင့်မှာဘယ်လို package မှသင့် system မှာ install မလုပ်ထားဘူးဆိုရင်တကယ့်ကိုဝမ်းသာရမှာပါ။
 
-At this point, you can install `php53`, `php54`, `php55` or `php56` using the `port install` command, for example:
+ဒီနေရာမှာ php53, php55 ဒါမှမဟုတ် php56 တွေကို port install command သုံးပြီး install လုပ်နိုင်ပါတယ်၊ ဉပမာ - 
 
     sudo port install php54
     sudo port install php55
 
-And you can run `select` command to switch your active php:
+command ကနေပြီးတော့ active php ကိုအောက်ဖော်ပြပါအတိုင်းပြောင်းနိုင်ပါတယ် -
 
     sudo port select --set php php55
 

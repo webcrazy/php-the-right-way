@@ -5,37 +5,28 @@ anchor:  composer_and_packagist
 
 ## Composer and Packagist {#composer_and_packagist_title}
 
-Composer is a **brilliant** dependency manager for PHP. List your project's dependencies in a `composer.json` file and,
-with a few simple commands, Composer will automatically download your project's dependencies and setup autoloading for
-you.
+Composer ဆိုတာက PHP အတွက် **brilliant** dependency manager တစ်ခုဖြစ်ပါတယ်။ သင့် Project ရဲ့ dependencies တွေကို `composer.json` ဆိုတဲ့ file ထဲမှာ list လုပ်ပြီး ရိုးရှင်းတဲ့ commands တစ်ချို့ run လိုက်ရုံနဲ့ Composer က သင့် project ရဲ့ dependencies တွေကို download လုပ်ပြီးတော့ autoloading ကိုပါ setup လုပ်ဆောင်ပေးမှာဖြစ်ပါတယ်။
 
-There are already a lot of PHP libraries that are compatible with Composer, ready to be used in your project. These
-"packages" are listed on [Packagist], the official repository for Composer-compatible PHP libraries.
+Composer နဲ့အဆင်ပြေတဲ့ PHP libraries တွေအတော်များများရှိပြီးသားပါ၊ သင့် project အတွင်းမှာလွယ်ကူစွာယူသုံးလိုက်ရုံပါဘဲ။ အဲ့ဒီ့ "packages" တွေက [Packagist] မှာ list လုပ်ထားပါတယ်၊ အဲ့ဒီ့ site က Composer နဲ့အဆင်ပြေတဲ့ PHP libraries တွေကိုစုထားတဲ့ official repository ဖြစ်ပါတယ်။
 
-### How to Install Composer
+### Composer ကိုဘယ်လို Install လုပ်ရမလဲ
 
-You can install Composer locally (in your current working directory) or globally (e.g. /usr/local/bin, recommended).
-Let's assume you want to install Composer globally:
+သင် Composer ကို locally install လုပ်လို့ရပါတယ် (သင်လက်ရှိအလုပ်လုပ်နေတဲ့ directory ကနေလုပ်တာကိုပြောတာပါ၊ ဒီနည်းကို recommend မပေးပါဘူး) ဒါမှမဟုတ် globally (e.g. /usr/local/bin). သင် Composer ကို locally install လုပ်ချင်တယ်ထားပါစို့။ ဒါဆိုရင် သင့် project root directory ကနေပြီးတော့ အောက်ဖော်ပြပါ command ကို run ပါ
 
 {% highlight console %}
-curl -sS https://getcomposer.org/installer | php
-mv composer.phar /usr/local/bin/composer
+curl -s https://getcomposer.org/installer | php
 {% endhighlight %}
 
-<strong>Note:</strong> If the above fails due to permissions, run the `mv` line again with `sudo`.
+အထက်က command ကို run လိုက်ရင် `composer.phar` ( PHP binary archive) ကို download လုပ်ပါလိမ့်မယ်။ အဲ့ဒါကိုသင် `php` ဆိုတာကိုရှေ့မှာထား run ပြီး သင့် project dependencies တွေကို manage လုပ်နိုင်ပါတယ်။
 
-This will download `composer.phar` (a PHP binary archive). You can run this with `php` to manage your project
-dependencies.
 <strong>Please Note:</strong> If you pipe downloaded code directly into an interpreter, please read the
 code online first to confirm it is safe.
 
-#### Installing on Windows
+#### Window မှာ Install လုပ်ခြင်း
 
-For Windows users the easiest way to get up and running is to use the [ComposerSetup] installer, which
-performs a global install and sets up your `$PATH` so that you can just call `composer` from any
-directory in your command line.
+Window users တွေအတွက်အလွယ်ဆုံးကတော့ [ComposerSetup] installer ကိုအသုံးပြုဖို့ပါဘဲ၊ အဲ့ဒါက global install နဲ့ `$PATH` ကို sets လုပ်သွားပါ့မယ် ဒါဆိုရင် သင် `composer` ဆိုပြီး Window command line ကနေသင်ကြိုက်နှစ်သတ်တဲ့ directory ကနေ run လို့ရပါပြီ။
 
-### How to Install Composer (manually)
+### Composer ကို ( manually ) ဘယ်လို install လုပ်မလဲ
 
 Manually installing Composer is an advanced technique; however, there are various reasons why a 
 developer might prefer this method vs. using the interactive installation routine. The interactive
